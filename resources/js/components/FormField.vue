@@ -1,7 +1,7 @@
 <template>
     <DefaultField :field="field">
         <template slot="field">
-            <star-rating
+            <StarRating
                 :read-only="false"
                 @rating-selected="setRating"
                 :id="field.name"

@@ -1,5 +1,5 @@
 <template>
-    <star-rating
+    <StarRating
         :id="field.name"
         :name="field.name"
         :rating="parseFloat(value) || 0"

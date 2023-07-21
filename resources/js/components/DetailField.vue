@@ -1,7 +1,7 @@
 <template>
     <PanelItem :field="field">
         <template v-slot="value">
-            <star-rating
+            <StarRating
                 :read-only="true"
                 :id="field.name"
                 :name="field.name"
