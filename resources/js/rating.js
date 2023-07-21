@@ -1,5 +1,5 @@
-Nova.booting((Vue, router) => {
-    Vue.component('index-rating', require('./components/IndexField'));
-    Vue.component('detail-rating', require('./components/DetailField'));
-    Vue.component('form-rating', require('./components/FormField'));
-})
+Nova.booting((Vue) => {
+    Vue.component('index-rating', require('./components/IndexField').default);
+    Vue.component('detail-rating', require('./components/DetailField').default);
+    Vue.component('form-rating', require('./components/FormField').default);
+});

@@ -17,6 +17,7 @@
         }
     ],
     "require-dev": {
+        "laravel/nova": "^4.0",
         "friendsofphp/php-cs-fixer": "^v3.22.0"
     },
     "autoload": {
@@ -39,6 +40,12 @@
     "config": {
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
