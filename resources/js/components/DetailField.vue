@@ -2,13 +2,13 @@
     <panel-item :field="field">
         <template slot="value">
             <star-rating
-                    :read-only="true"
+                :read-only="true"
 
-                    :id="field.name"
-                    :name="field.name"
-                    :rating="parseFloat(value) || 0"
-                    :increment="increment"
-                    :max-rating="max"
+                :id="field.name"
+                :name="field.name"
+                :rating="parseFloat(value) || 0"
+                :increment="increment"
+                :max-rating="max"
                     :show-rating="showRating"
 
                     :star-size="field['star-size']"
