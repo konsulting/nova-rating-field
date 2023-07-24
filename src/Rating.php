@@ -21,8 +21,8 @@ class Rating extends Field
      */
     protected static $defaultStyles = [
         'star-size' => 30,
-        'active-color' => 'var(--primary)',
-        'inactive-color' => '#d8d8d8',
+        'active-color' => 'rgba(var(--colors-primary-500))',
+        'inactive-color' => 'rgba(var(--colors-gray-400))',
         'border-color' => 'var(--60)',
         'border-width' => 0,
         'padding' => 10,

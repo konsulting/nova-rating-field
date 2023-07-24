@@ -3,3 +3,4 @@ Nova.booting((Vue) => {
     Vue.component('detail-rating', require('./components/DetailField').default);
     Vue.component('form-rating', require('./components/FormField').default);
 });
+x

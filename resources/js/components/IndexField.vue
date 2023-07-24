@@ -1,5 +1,5 @@
 <template>
-    <StarRating
+    <star-rating
         :id="field.name"
         :name="field.name"
         :rating="parseFloat(value) || 0"
@@ -32,7 +32,7 @@ export default {
 
     components: { StarRating },
 
-    dat: () => ({
+    data: () => ({
         value: 0,
     }),
 

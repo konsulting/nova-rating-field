@@ -1,9 +1,9 @@
 <template>
-    <DefaultField :field="field">
-        <template slot="field">
-            <StarRating
+    <DefaultField :field="field" :errors="errors" :show-help-text="showHelpText">
+        <template #field>
+            <star-rating
                 :read-only="false"
-                @rating-selected="setRating"
+                @update:rating="setRating"
                 :id="field.name"
                 :name="field.name"
                 :rating="parseFloat(value) || 0"
@@ -22,10 +22,6 @@
                 :glow-color="field['glow-color']"
                 :text-class="field['text-class']"
             />
-
-            <p v-if="hasError" class="my-2 text-danger">
-                {{ firstError }}
-            </p>
         </template>
     </DefaultField>
 </template>

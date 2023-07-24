@@ -1,7 +1,7 @@
 <template>
-    <PanelItem :field="field">
-        <template v-slot="value">
-            <StarRating
+    <PanelItem :index="index" :field="field">
+        <template #value>
+            <star-rating
                 :read-only="true"
                 :id="field.name"
                 :name="field.name"
@@ -29,7 +29,7 @@
 import StarRating from 'vue-star-rating';
 
 export default {
-    props: ['resource', 'resourceName', 'resourceId', 'field'],
+    props: ['resource', 'resourceName', 'resourceId', 'field', 'index'],
 
     components: { StarRating },
 

@@ -13,6 +13,9 @@
     "devDependencies": {
         "laravel-mix": "^6.0.49",
         "postcss": "^8.3.11",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.64.0",
+        "sass-loader": "^13.3.2",
         "vue": "^3.3.4",
         "vue-loader": "^17.2.2"
     },
@@ -20,6 +23,6 @@
         "@vue/babel-plugin-jsx": "^1.1.5",
         "animated-scroll-to": "^2.3.0",
         "sass-loader": "^13.3.2",
-        "vue-star-rating": "^1.7.0"
+        "vue-star-rating": "^2.1.0"
     }
 }

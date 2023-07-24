@@ -17,7 +17,7 @@ class RatingServiceProvider extends ServiceProvider
     {
         Nova::serving(function (ServingNova $event) {
             Nova::script('rating', __DIR__.'/../dist/js/rating.js');
-            //Nova::style('rating', __DIR__.'/../dist/css/rating.css');
+            //Nova::style('rating', __DIR__.'/../dist/sass/rating.sass');
         });
     }
 }
